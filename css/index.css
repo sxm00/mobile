@@ -1,0 +1,191 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+
+    /*清除移动端默认的 点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+    /*设置所有的都是以边框开始计算宽度 百分比*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    -webkit-text-size-adjust:100%;/*禁止字体大小的变化*/
+    width: 750px;
+    margin: 0 auto;
+}
+body{
+    width: 750px;
+    font-size: 14px;
+    font-family: Helvetica;
+    min-width:320px;
+    -webkit-overflow-scrolling:touch;/*流畅滚动*/
+}
+input,textarea{
+    outline:none;
+    border: 0;
+    -webkit-appearance:none;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a, img {-webkit-touch-callout:none;}/*禁止长按 a，img 标签长按出现菜单栏*/
+a,button,input,optgroup,select,textarea{
+    -webkit-tap-highlight-color:rgba(0,0,0,0)/*去掉半透明遮罩*/
+}
+/*placeholder字体颜色设置*/
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #000;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #000;
+}
+input:-ms-input-placeholder{
+    color: #000;
+}
+input::-webkit-input-placeholder {
+    color: #000;
+}
+.pd6{
+    padding: 60px;
+}
+.content{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+header{
+    height: 500px;
+    display: flex;
+    justify-content:center;
+    align-items:center
+}
+.zhuce{
+    width: 100%;
+    height: 400px;
+    padding: 40px 0 20px 0;
+}
+.zhuce li{
+    padding: 30px 10px;
+}
+.zhuce li p,.zhuce1 a{
+    color:#8e8e92;
+    font-size: 20px;
+}
+.zhuce li input{
+    background: #fff;
+}
+.zhuce1{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #f3f3f4;
+}
+.zhuce1 input{
+    font-size: 28px;
+}
+
+#btn{
+    width: 100%;
+    height: 100px;
+    background: #50d2c2;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+#btn a{
+    color: #ffffff;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 60px;
+    background: #ffffff;
+}
+footer p{
+    width: 100%;
+    color:#8e8e92;
+    font-size: 20px;
+    padding-top: 30px;
+}
+footer p a{
+    color: #333;
+}
+/*siign up页面*/
+.nav{
+    width: 100%;
+    height: 90px;
+    font-size: 30px;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+.nav span{
+    display: block;
+    margin: 0 auto;
+}
+.head{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+.head_photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 100% 100%;
+    overflow: hidden;
+}
+.head_add{
+    position:absolute;
+    top: 15%;
+    left:55%;
+}
+.head_add1{
+    position: absolute;
+    top:21%;
+    left:58%;
+}
+/*第三页*/
+.wireless{
+    width: 750px;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.msg{
+    width: 750px;
+    position: fixed;
+    bottom: 0;
+    top: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#50d2c2 ;
+    flex-wrap:wrap;
+    flex-direction: column ;
+}
+.msg p{
+    width: 80%;
+    line-height: 60px;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+.msg img{
+    position: absolute;
+    bottom: 10%;
+
+}
